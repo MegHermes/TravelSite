@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body.hero {
+            margin: 0;
+            font-family: Verdana, Arial, Helvetica, sans-serif; 
+            overflow-x: hidden; 
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #FFFFFF;
+        }
+
+        .topnav a {
+            float: left;
+            color: #335576;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .topnav a.active {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            background: #ffffff;
+            color: #335576;
+            font-size: 24px;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #FEFAF5;
+        }
+
+        .hero-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 90vh; 
+}
+
+.hero-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .itinerary-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 0px;
+            text-align: center;
+            width: 15%;
+            height: 55%;
+            margin: 0;
+
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+               .destination-title {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            margin-left: 50px;
+            font-size: 56px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .itinerary-card p {
+        margin-top: 50px;
+        margin-bottom: 30px; 
+    }
+
+        h2 {
+            color: #335576; 
+            text-decoration: underline;
+        }
+
+        h6 {
+            color: #DB7A4E;
+        }
+
+        .footer {
+            background-color: #FEFAF5;
+            color: #335576;
+            padding: px;
+            text-align: center;
+        }
+
+        .footer__content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer__column {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer__column h3 {
+            color: #335576;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 50px;
+            background-color: #DB7A4E;
+            color: #ee812e;
+            text-decoration: none;
+            font-size: 16px;
+            text-align: left;
+            padding: 10px 20px;
+            white-space: nowrap;
+        }
+
+        .btn:hover {
+            background-color: #DB7A4E;
+        }
+
+        .content1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 24px;
+            background-color: #ffffff;
+        }
+
+        .content1 .card {
+            position: relative;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+            width: calc(30% - 20px);
+            margin: 0 10px;
+            overflow: hidden;
+        }
+
+        .content1 .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-name {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 0 0 5px 5px;
+            font-size: 14px;
+        }
+
+        .content1 .card:hover {
+            background-color: #ffffff;
+        }
+
+        .content1 .card:hover .destination-name {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+
+<body class="hero">
+
+    <div class="header">
+        <h4 style="color: #335576;"><a href="index.html" style="text-decoration: none; color: #335576;">Meg's Travel Site</a></h4>
+        <div class="topnav">
+            <a href="index.html" >Home</a>
+            <a class="active" href="#Hawaii">Hawaii</a>
+            <a href="iceland.html">Iceland</a>
+            <a href="greece.html">Greece</a>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <img src="Assets/Images/hawaii.jpg" alt="Hero Image">
+        <div class="hero-overlay">
+            <div class="destination-title">Hawaii</div>
+            <div class="itinerary-card">
+                <h2>Mon - Fri</h2>
+                <p>Breakfast</p>
+                <p>Lunch</p>
+                <p>Dinner</p>
+                <p>Snorkeling</p>
+            </div>
+
+            <div class="itinerary-card">
+                <h2>Saturday</h2>
+                <p>Breakfast</p>
+                <p>Lunch</p>
+                <p>Dinner</p>
+                <p>Snorkeling</p>
+            </div>
+
+            <div class="itinerary-card">
+                <h2>Sunday</h2>
+                <p>Breakfast</p>
+                <p>Lunch</p>
+                <p>Dinner</p>
+                <p>Snorkeling</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer__content">
+            <div class="footer__column">
+                <h3>Contact</h3>
+                <h6>EMAIL</h6>
+                <p>info@travelsite.com</p>
+            </div>
+            <div class="footer__column">
+                <h3>Hours</h3>
+                <h6>MONDAY - FRIDAY</h6>
+                <p>9:00 AM - 5:00 PM</p>
+            </div>
+            <div class="footer__column">
+                <div class="footer__space-row"></div>
+                <h6>SATURDAY</h6>
+                <p>10:00 AM - 4:00 PM</p>
+            </div>
+            <div class="footer__column">
+                <div class="footer__space-row"></div>
+                <h6>SUNDAY</h6>
+                <p>Closed</p>
+            </div>
+            <div class="footer__column">
+                <div class="footer__space-row"></div>
+                <h3>Social</h3>
+                <div class="footer__social-icons">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img id="Instagram Icon" src="Assets/Icons/icon-instagram.png" alt="Instagram Logo">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img id="FacebookIcon" src="Assets/Icons/icon-facebook.png" alt="Facebook Logo">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img id="Twitter Icon" src="Assets/Icons/icon-twitter.png" alt="Twitter Logo">
+                    </a>
+                </div>
+            </div>
+            
+            
+    </div>
+
+</body>
+
+</html>
